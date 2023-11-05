@@ -1,26 +1,110 @@
-.content {
+* {
+    background: #2E2B54;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.buttons {
+.content {
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    border-radius: 63px;
+    background: #215E79;
+    flex-direction: column;
+    width: 40vw;
+    max-width: 80%; 
+    height: 60vh;
+    flex-shrink: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    color: #321746;
+    font-family: 'Kadwa', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #215E79;
+}
+
+.inputbox {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 250px;
+    background: #D9D9D9;
+    border: 0;
+    width: 60%;
+    height: 10%;
+    padding-left: 10px;
 }
 
 .join {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 250px;
+    background: #D9D9D9;
+    border: 0;
+    width: 60%;
+    height: 10%;
+    padding-left: 10px;
+}
+
+.join-btn {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    border-radius: 200px;
+    background: #D9D9D9;
+    border: 0;
+    width: 20%;
+    height: 10%;
+}
+
+.create-btn {
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    border-radius: 200px;
+    background: #D9D9D9;
+    border: 0;
+    width: 20%;
+    height: 10%;
+}
+
+.error {
+    background: #215E79;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: red; 
 }
 
 .create {
     width: 100%;
 }
+
+
 
 .message-box {
     border-color: black;
@@ -64,8 +148,62 @@ h2 {
     padding-right: 10px;
   }
   
-  .muted {
+.muted {
     font-size: 10px;
-    color: darkgray;
   }
-  
+
+#blueblur{
+    background: #1D7186;
+    filter: blur(126px);
+}
+
+#purpleblur {
+    border-radius: 381px;
+    background: #350B3E;
+    filter: blur(190px);
+}
+
+.e1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    border-radius: 381px;
+    
+}
+
+.e2 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 20%;
+    height: 20%;
+    border-radius: 381px;
+}
+
+.e3 {
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+    width: 20%;
+    height: 20%;
+    border-radius: 381px;
+}
+
+.e4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 20%;
+}
+
+.e5 {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    width: 20%;
+    height: 20%;
+}
+
