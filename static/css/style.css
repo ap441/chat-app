@@ -107,19 +107,36 @@ h3 {
 
 
 .message-box {
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
-    background-color: whitesmoke;
-    height: 80vh;
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 63px;
+    background: #215E79;
     flex-direction: column;
-    width: 80vw;
-    align-items: stretch;
+    width: 400px;
+    max-width: 80%; 
+    height: 400px;
+    flex-shrink: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.message-box h2{
+    background: #215E79;
+}
+
+.inputs{
+    background: #215E79;
+}
+
+.sendbtn{
+    background: #215E79;
+}
+
+
+
 .messages {
+    background: #215E79;
     overflow-y: scroll;
     flex: 1;
     width: 100%;
@@ -207,8 +224,3 @@ h2 {
     height: 20%;
 }
 
-.messagebox {
-    width: 90vw;
-    height: 20vh;
-
-}
