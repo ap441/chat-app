@@ -1,2 +1,2 @@
 # chat-app
-Chat application using python for first sem project
+Chat application using python and flask for first sem project
