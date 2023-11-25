@@ -1,4 +1,5 @@
 {% extends 'base.html' %} {% block content %}
+<a href="{{ url_for('home') }}" class="exit-btn">Exit Room</a>
 <div class="message-box">
   <h2>Chat Room: {{code}}</h2>
   <div class="messages" id="messages"></div>
@@ -10,7 +11,7 @@
       name="message"
       id="message"
     />
-    <button type="button" class="sendbtn" name="send" id="send-btn" onClick="sendMessage()">
+    <button type="button" name="send" id="send-btn" onClick="sendMessage()">
       Send
     </button>
   </div>
@@ -45,8 +46,21 @@
     message.value = "";
   };
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      var sendButton = document.getElementById("send-btn");
+
+      document.addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+              event.preventDefault();
+              sendButton.click();
+          }
+      });
+  });
+</script>
 {% for msg in messages %}
 <script type="text/javascript">
   createMessage("{{msg.name}}", "{{msg.message}}");
 </script>
+
 {% endfor %} {% endblock %}

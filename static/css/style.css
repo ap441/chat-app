@@ -80,6 +80,16 @@ h3 {
     height: 10%;
 }
 
+.join-btn:hover {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.join-btn:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+
 .create-btn {
     position: absolute;
     top: 70%;
@@ -89,6 +99,16 @@ h3 {
     border: 0;
     width: 20%;
     height: 10%;
+}
+
+.create-btn:hover {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.create-btn:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
 }
 
 .error {
@@ -106,16 +126,18 @@ h3 {
 
 /* ROOM STYLING BEGINS FROM HERE*/
 
+
 .message-box {
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 10px;
+    border: none;
     height: 80vh;
     display: flex;
     flex-direction: column;
     width: 80vw;
     align-items: stretch;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+   
 }
+
 
 .message-box h2{
     background: #215E79;
@@ -123,30 +145,49 @@ h3 {
 
 .inputs{
     background: #215E79;
+    justify-content: center;
 }
 
-.sendbtn{
-    display: flex;
-    position: relative;
-    top: 50%;
-    right: 1%;
-    border-radius: 200px;
-    background: #D9D9D9;
-    border: 0;
+#send-btn {
     width: 10%;
-    height: 20%;
-
+    background: white;
+    border-radius: 20px;
+    height: 4.4vh;
+    border: none;
+    transition: box-shadow 0.3s ease;
 }
 
+#send-btn:hover {
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#send-btn:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
 
 
 .messages {
     background: #215E79;
-    overflow-y: scroll;
+    overflow-y: auto;
     flex: 1;
     width: 100%;
 }
-
+.messages::-webkit-scrollbar {
+    width: 12px; 
+}
+.messages::-webkit-scrollbar-track {
+    background-color: #215E79; 
+}
+.messages::-webkit-scrollbar-thumb {
+    background-color: #1D7186; 
+    border-radius: 6px; 
+    border: 3px solid #215E79; 
+}
+.messages::-webkit-scrollbar-thumb:hover {
+    background-color: #155769;
+}
 .inputs {
     padding: 10px;
     display: flex;
@@ -157,8 +198,13 @@ h2 {
 }
 
 #message {
-    flex: 1;
-    width: 85%;
+    margin-right: 2%;
+    width: 80%;
+    background: white;
+    border-radius: 20px;
+    height: 4vh;
+    padding-left: 10px;
+
 }
 
 .text {
@@ -192,7 +238,7 @@ h2 {
 #purpleblur {
     border-radius: 381px;
     background: #350B3E;
-    filter: blur(190px);
+    filter: blur(90px);
 }
 
 .e1 {
@@ -237,5 +283,24 @@ h2 {
     left: 5%;
     width: 20%;
     height: 20%;
+}
+
+.exit-btn {
+    display: block;
+    position: absolute;
+    bottom: -20%;
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #D9D9D9;
+    color: #215E79;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.exit-btn:hover {
+    background-color: #1D7186;
+    color: white;
 }
 
